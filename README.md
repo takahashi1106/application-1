@@ -1,5 +1,10 @@
 # README
 
+アプリケーションを完成させよう1 の課題です。
+宜しくお願い致します。
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
