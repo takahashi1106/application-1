@@ -8,7 +8,8 @@ class BooksController < ApplicationController
     if @book.save
     redirect_to book_path(@book.id),notice:"Book was successfully created."
     else
-    render:new
+    @books=Book.all.order(id:"ASC")
+    render:index
     end
   end
   
@@ -30,7 +31,7 @@ class BooksController < ApplicationController
    if @book.update(book_params)
     redirect_to book_path,notice:"Book was successfully updated."
    else
-     render:new
+     render:edit
    end
   end
   

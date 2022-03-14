@@ -23,6 +23,9 @@
 
 
 <h2>New book</h2>
+
+<%=form_with model:@book do |f| %>
+
 <% if @book.errors.any? %>
 <%=@book.errors.count %>errors prohibited this book from being saved:
 <ul>
@@ -34,7 +37,7 @@
 
 
 
-<%=form_with model:@book do |f| %>
+
 <div class="field">
 <label for="book_title">Title</label>
  
